@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Coral Reef Awareness</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home" onclick="showPage('home')">Home</a></li>
+        <li><a href="#about" onclick="showPage('about')">About</a></li>
+        <li><a href="#contact" onclick="showPage('contact')">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="page active" id="home">
+      <div class="hero">
+        <h1>WELCOME TO THE CORAL REEF AWARENESS</h1>
+        <p>
+          Explore the vibrant world of coral reefs and their importance to
+          marine life. Join us in our efforts to protect these beautiful
+          ecosystems.
+        </p>
+      </div>
+      <p class="coral-definition">
+        Terumbu karang adalah sekumpulan hewan karang yang bersimbiosis dengan
+        sejenis tumbuhan alga yang disebut zooxanthellae. Terumbu karang
+        termasuk dalam jenis filum Cnidaria kelas Anthozoa yang memiliki
+        tentakel. Kelas Anthozoa tersebut terdiri dari dua Subkelas yaitu
+        Hexacorallia (atau Zoantharia) dan Octocorallia, yang keduanya dibedakan
+        secara asal-usul morfologi dan fisiologi. Terumbu karang pada umumnya
+        hidup di pinggir pantai atau daerah yang masih terkena cahaya matahari
+        kurang lebih 50 m di bawah permukaan laut.
+      </p>
+    </div>
+
+    <div class="page" id="about">
+      <h1 class="about-title">ABOUT CORAL REEFS</h1>
+      <p class="about-description">
+        Habitat: Ekosistem terumbu karang sebagian besar terdapat di perairan
+        tropis, sangat sensitif terhadap perubahan lingkungan hidupnya terutama
+        suhu, salinitas, sedimentasi, eutrofikasi, dan memerlukan kualitas
+        perairan alami (pristine).
+      </p>
+      <p class="about-description">
+        Manfaat: Terumbu karang mengandung berbagai manfaat yang sangat besar
+        dan beragam, baik secara ekologi maupun ekonomi. Estimasi jenis manfaat
+        yang terkandung dalam terumbu karang dapat diidentifikasi menjadi dua
+        yaitu manfaat langsung dan manfaat tidak langsung.
+      </p>
+      <p class="about-description">
+        Manfaat dari terumbu karang yang langsung dapat dimanfaatkan oleh
+        manusia adalah: Sebagai tempat hidup ikan yang banyak dibutuhkan manusia
+        dalam bidang pangan, seperti ikan kerapu, ikan baronang, ikan ekor
+        kuning, batu karang, Pariwisata, wisata bahari melihat keindahan bentuk
+        dan warnanya. Penelitian dan pemanfaatan biota perairan lainnya yang
+        terkandung di dalamnya. sebagai bahan baku Perhiasan Dan Industri
+      </p>
+
+      <h2 class="about-title">Jenis-Jenis Coral</h2>
+      <p class="about-description">
+        Terumbu Karang Di Indonesia Indonesia adalah salah satu pemilik
+        ekosistem terumbu karang terbesar di dunia. Diperkirakan, terdapat 300
+        jenis jenis terumbu karang yang ada di Indonesia. Berikut ini 10 contoh
+        terumbu karang yang ada di Indonesia.
+      </p>
+
+      <!-- Coral Images Section -->
+      <div class="coral-gallery">
+        <div class="coral-item">
+          <img src="coral1.jpg" alt="Coral Image" />
+          <p>Acropora Elegantula</p>
+        </div>
+        <div class="coral-item">
+          <img src="coral2.jpg" alt="Coral2 Image" />
+          <p>Millepora</p>
+        </div>
+        <div class="coral-item">
+          <img src="coral3.jpg" alt="Coral3 Image" />
+          <p>Acropora Hyacinthus</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" id="contact">
+      <h1>Contact Us</h1>
+      <p>Form Contact Us</p>
+
+      <form action="#" method="POST" class="contact-form">
+        <label for="name">Full Name <span style="color: red">*</span></label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your full name"
+          required
+        />
+
+        <label for="email">E-mail <span style="color: red">*</span></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@example.com"
+          required
+        />
+
+        <label for="message">Message <span style="color: red">*</span></label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Type here..."
+          required
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
